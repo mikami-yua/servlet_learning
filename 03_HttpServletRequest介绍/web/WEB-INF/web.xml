@@ -11,6 +11,14 @@
         <servlet-name>TwoServlet</servlet-name>
         <servlet-class>controller.TwoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThreeServlet</servlet-name>
+        <servlet-class>controller.ThreeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FourServlet</servlet-name>
+        <servlet-class>controller.FourServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>OneServlet</servlet-name>
         <url-pattern>/one</url-pattern>
@@ -18,5 +26,13 @@
     <servlet-mapping>
         <servlet-name>TwoServlet</servlet-name>
         <url-pattern>/two</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThreeServlet</servlet-name>
+        <url-pattern>/three</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FourServlet</servlet-name>
+        <url-pattern>/four</url-pattern>
     </servlet-mapping>
 </web-app>
