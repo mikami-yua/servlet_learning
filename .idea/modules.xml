@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_servlet接口实现类/01_servlet接口实现类.iml" filepath="$PROJECT_DIR$/01_servlet接口实现类/01_servlet接口实现类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_servlet生命周期/02_servlet生命周期.iml" filepath="$PROJECT_DIR$/02_servlet生命周期/02_servlet生命周期.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_HttpServletRequest介绍/03_HttpServletRequest介绍.iml" filepath="$PROJECT_DIR$/03_HttpServletRequest介绍/03_HttpServletRequest介绍.iml" />
     </modules>
   </component>
 </project>
