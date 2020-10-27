@@ -1,0 +1,25 @@
+任务：在线考试管理系统------用户信息管理模块
+
+子任务：
+    用户信息的注册
+    用户信息的查询
+    用户信息的删除
+    用户信息的更新
+
+准备工作：
+    1.创建用户信息表 Users.frm  //.frm是描抄述了表的结构
+
+        CREATE TABLE Users(
+            userid int primary key auto_increment,
+            username varchar(50),
+            password varchar(50),
+            sex char(1),            #一个字符‘男’或‘女’
+            email varchar(50)
+        )
+
+    2.在src下 实体类 entity.Users  用于描述表的结构
+
+    3.src下 util.JdbcUtil工具类
+
+    4.web下 web-inf下创建lib文件夹，存放mysql提供jdbc实现jar包
+
