@@ -22,6 +22,13 @@ public class Users {
         this.email = email;
     }
 
+    public Users(Integer userId, String userName, String sex, String email) {
+        this.userId = userId;
+        this.userName = userName;
+        this.sex = sex;
+        this.email = email;
+    }
+
     public Integer getUserId() {
         return userId;
     }
