@@ -95,4 +95,29 @@ public class UserDao {
         }
         return result;
     }
+
+    //登录验证
+    public int login(String username,String password){
+        String sql="select count(*) from users where username=? and password=?";
+        Connection conn=null;
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        int result=0;
+
+        try {
+            conn=JdbcUtil.getConnection();
+            ps=conn.prepareStatement(sql);
+            ps.setString(1,username);
+            ps.setString(2,password);
+            rs=ps.executeQuery();
+            while (rs.next()){
+                result=rs.getInt("count(*)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JdbcUtil.close(conn,ps,rs);
+        }
+        return result;
+    }
 }
