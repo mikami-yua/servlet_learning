@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/07_Http500/07_Http500.iml" filepath="$PROJECT_DIR$/07_Http500/07_Http500.iml" />
       <module fileurl="file://$PROJECT_DIR$/08_Http405/08_Http405.iml" filepath="$PROJECT_DIR$/08_Http405/08_Http405.iml" />
       <module fileurl="file://$PROJECT_DIR$/09_重定向解决方案/09_重定向解决方案.iml" filepath="$PROJECT_DIR$/09_重定向解决方案/09_重定向解决方案.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_请求转发解决方案/10_请求转发解决方案.iml" filepath="$PROJECT_DIR$/10_请求转发解决方案/10_请求转发解决方案.iml" />
     </modules>
   </component>
 </project>
