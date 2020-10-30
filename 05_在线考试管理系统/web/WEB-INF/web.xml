@@ -35,4 +35,10 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+    <!--自定义的欢迎页面-->
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file><!--动态资源文件作为默认请求是，写别名，把前面的斜线抹掉-->
+        <welcome-file>user/find</welcome-file>
+    </welcome-file-list>
 </web-app>

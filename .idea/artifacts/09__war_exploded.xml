@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="09_重定向解决方案:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/09__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="09_重定向解决方案/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="09_重定向解决方案" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
