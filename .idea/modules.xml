@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/08_Http405/08_Http405.iml" filepath="$PROJECT_DIR$/08_Http405/08_Http405.iml" />
       <module fileurl="file://$PROJECT_DIR$/09_重定向解决方案/09_重定向解决方案.iml" filepath="$PROJECT_DIR$/09_重定向解决方案/09_重定向解决方案.iml" />
       <module fileurl="file://$PROJECT_DIR$/10_请求转发解决方案/10_请求转发解决方案.iml" filepath="$PROJECT_DIR$/10_请求转发解决方案/10_请求转发解决方案.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_servletContext使用介绍/11_servletContext使用介绍.iml" filepath="$PROJECT_DIR$/11_servletContext使用介绍/11_servletContext使用介绍.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_cookie/12_cookie.iml" filepath="$PROJECT_DIR$/12_cookie/12_cookie.iml" />
     </modules>
   </component>
 </project>
