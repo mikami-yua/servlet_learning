@@ -7,8 +7,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 public class UserAddServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,7 +29,10 @@ public class UserAddServlet extends HttpServlet {
 
         //2。调用【UserDao】将用户信息填充到insert命令并借助JDBC规范发送到数据库服务器
         user=new Users(null,userName,password,sex,email);
+        Date startDate=new Date();
         result=dao.add(user);
+        Date endDate=new Date();
+        System.out.println("添加用户用时 ："+(endDate.getTime()-startDate.getTime())+"毫秒");//12-13毫秒之间
 
         //3.【调用响应对象】将处理结果以二进制形式写到响应体中
         response.setContentType("text/html;charset=utf-8");
@@ -38,7 +43,7 @@ public class UserAddServlet extends HttpServlet {
             out.print("<font style='color:red;font-size:40'>用户信息注册失败</font>");
         }
     }
-    //doGet执行之后，tomact负责销魂响应对象和请求对象
+    //doGet执行之后，tomcat负责销魂响应对象和请求对象
     //Tomcat 负责将http响应协议包推送到发起请求的浏览器上
     //浏览器根据响应头content-type指定编译器对响应体二进制内容编辑
     //浏览器将编辑后结果在窗口展示给用户
