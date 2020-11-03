@@ -15,7 +15,7 @@ public class UserDao {
 
     //private JdbcUtil util=new JdbcUtil();
 
-    //jdbc规范中connection的创建与销毁最耗费时间
+    //jdbc规范中connection的创建与销毁最耗费时间，修好了
 
     /**
      * 用户注册
