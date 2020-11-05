@@ -41,4 +41,9 @@
         <welcome-file>login.html</welcome-file><!--动态资源文件作为默认请求是，写别名，把前面的斜线抹掉-->
         <welcome-file>user/find</welcome-file>
     </welcome-file-list>
+    
+    <!--注册监听器-->
+    <listener>
+        <listener-class>listener.OneListener</listener-class>
+    </listener>
 </web-app>

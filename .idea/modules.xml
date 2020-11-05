@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/14_HTTPSesrvletRequest/14_HTTPSesrvletRequest.iml" filepath="$PROJECT_DIR$/14_HTTPSesrvletRequest/14_HTTPSesrvletRequest.iml" />
       <module fileurl="file://$PROJECT_DIR$/15_ServletContextListener/15_ServletContextListener.iml" filepath="$PROJECT_DIR$/15_ServletContextListener/15_ServletContextListener.iml" />
       <module fileurl="file://$PROJECT_DIR$/16_servletContextAttributeListener/16_servletContextAttributeListener.iml" filepath="$PROJECT_DIR$/16_servletContextAttributeListener/16_servletContextAttributeListener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17_过滤器检测请求的合法性/17_过滤器检测请求的合法性.iml" filepath="$PROJECT_DIR$/17_过滤器检测请求的合法性/17_过滤器检测请求的合法性.iml" />
     </modules>
   </component>
 </project>

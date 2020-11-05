@@ -30,7 +30,7 @@ public class UserAddServlet extends HttpServlet {
         //2。调用【UserDao】将用户信息填充到insert命令并借助JDBC规范发送到数据库服务器
         user=new Users(null,userName,password,sex,email);
         Date startDate=new Date();
-        result=dao.add(user);
+        result=dao.add(user);//add(user,request)使用连接池
         Date endDate=new Date();
         System.out.println("添加用户用时 ："+(endDate.getTime()-startDate.getTime())+"毫秒");//12-13毫秒之间
 
