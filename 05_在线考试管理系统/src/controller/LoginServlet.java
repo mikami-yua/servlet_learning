@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class LoginServlet extends HttpServlet {
@@ -25,6 +26,8 @@ public class LoginServlet extends HttpServlet {
         //System.out.println(result);
         //4.调用响应对象，根据验证结果把不同的资源文件地址写到响应头，交给浏览器
         if(result==1){
+            //在判断当前用户合法之后，通过请求对象向tomcat申请为当前对象申请一个HTTPsession（私人储物柜）
+            HttpSession session=request.getSession();
             response.sendRedirect("index.html");
         }else {
             response.sendRedirect("login_error.html");
